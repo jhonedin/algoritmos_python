@@ -35,3 +35,10 @@ unordered_list = [5,7,9,11,15,1,8]
 print("unordered list: ",unordered_list)
 ordered_list = bubble_sort(unordered_list)
 print("ordered list: ", ordered_list)
+
+"""
+Prueba:
+unordered list:  [5, 7, 9, 11, 15, 1, 8]
+ordered list:  [1, 5, 7, 8, 9, 11, 15]
+
+"""
