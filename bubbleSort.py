@@ -1,14 +1,32 @@
+"""
+Descripción del algoritmo:
+
+La Ordenación de burbuja (Bubble Sort en inglés) es un sencillo algoritmo de ordenamiento. 
+Funciona revisando cada elemento de la lista que va a ser ordenada con el siguiente, 
+intercambiándolos de posición si están en el orden equivocado. 
+Es necesario revisar varias veces toda la lista hasta que no se necesiten más intercambios, 
+lo cual significa que la lista está ordenada. 
+Este algoritmo obtiene su nombre de la forma con la que suben por la lista los elementos durante los intercambios, 
+como si fueran pequeñas "burbujas". 
+También es conocido como el método del intercambio directo. 
+Dado que solo usa comparaciones para operar elementos, 
+se lo considera un algoritmo de comparación, 
+siendo uno de los más sencillos de implementar.
+
+Fuente: https://es.wikipedia.org/wiki/Ordenamiento_de_burbuja
+
+"""
+
 
 def bubble_sort(a_list):
-    # loop that allows you to go through all the elements of the list
+    # Ciclo que permite recorrer toda la lista
     for i in range(0,len(a_list)):
-        # cycle that allows to compare each element of the list
+        # Ciclo que permite ir comparando cada elemento de la lista
         for j in range(0,len(a_list)-i-1):
-            # compare two adjacent elements
+            # Se compara dos elementos adyacentes
             if a_list[j] > a_list[j+1]:
                 aux = a_list[j]
-                # swapping elements if elements
-                # are not in the intended order
+                # se intercambia los elementos si no estan en el orden esperado
                 a_list[j] = a_list[j+1]
                 a_list[j+1] = aux
     return a_list
